@@ -9,27 +9,30 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
     </head>
     <body>
         <!--caabeçalho-->
         <header>
-            <div>
+            <div id="divLogoSis">
+                <span id="spanAlinahmentoVertical"></span>
                 <a href="">
-                    <img src="static/imagens/bf_logotipoSistema.png">
+                    <img src="static/imagens/bf_logotipoSistema.png" id="imgLogo">
                 </a>
             </div>
-            <div>
+            <div id="divUsuarioLogoado">
                 Olá, João Paulo
                 <br>
-                <img src="static/imagens/bf_iconeCarrinho.png">
+                <img src="static/imagens/bf_iconeCarrinho.png" id="imgCarrinho">
             </div>
         </header>
+        <br><br>
         <br><br>
         <!--cabeçalho fim-->
 
         <div>
-            <h1>Relatório de itens</h1>
-            <fieldset id="fieldsetFiltros">
+            <h1>Relatório de pedidos</h1>
+            <fieldset id="fieldsetPedidos">
                 <legend>Filtros</legend>
 
                 <label for="cod">Código: </label><br>
@@ -48,24 +51,28 @@ and open the template in the editor.
         
         <table>
             <tr>
-                <th>Item</th>
-                <th>Quantidade</th>
-                <th>Faturamento</th>
+                <th>Pedido</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Valor</th>
             </tr>
             <tr>
-                <td>Pizza</td>
-                <td>30</td>
-                <td>R$ 1.125,30</td>
+                <td><input type="button" value="#2014"></td>
+                <td>João Paulo da Mata Mendes</td>
+                <td>Av Roberto Camelier</td>
+                <td>R$ 45,60</td>
             </tr>
              <tr>
-                <td>Lanches</td>
-                <td>25</td>
-                <td>R$ 562,30</td>
+                <td><input type="button" value="#2014"></td>
+                <td>Nadir Farias dos Santos</td>
+                <td>Av Roberto Camelier</td>
+                <td>R$ 60,50</td>
             </tr>
              <tr>
-                <td>Churrasco</td>
-                <td>38</td>
-                <td>R$ 2.125,30</td>
+                <td><input type="button" value="#2014"></td>
+                <td>Juca Medalha</td>
+                <td>Beco do Relógio</td>
+                <td>R$ 50,60</td>
             </tr>
         </table>
 
